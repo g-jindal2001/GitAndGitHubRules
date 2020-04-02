@@ -26,3 +26,12 @@ git status
 
 9.How to check Log of all commits of file
 git log
+
+10.How to check difference between recent commit and the one before it
+git diff
+
+11.How to check the recent log
+git log-1
+
+12.How to check difference between the last commit and the staged area
+git diff --staged
