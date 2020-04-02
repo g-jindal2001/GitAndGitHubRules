@@ -1,1 +1,28 @@
 							GIT AND GIT HUB
+
+1.How to Make directories:
+mkdir Nameofdirectory
+
+2.How to get inside a directory:
+cd Nameofdirectory
+
+3.How to initialize a directory
+git init
+
+4.How to make a .txt file inside a directory
+touch Filename.txt
+
+5.How to remove a .txt file inside a directory
+rm Filename.txt
+
+6.How to stage a .txt file
+git add Filenname.txt
+
+7.How to commit a .txt file
+git commit -m "Messagedescription"
+
+8.How to check status of a file?
+git status
+
+9.How to check Log of all commits of file
+git log
