@@ -1,0 +1,43 @@
+
+13.How to check difference between a certain commit and the latest one?
+git diff First7alplnumericlettersofthecommit Filename.txt
+
+14.How to switch between different versions of the file
+git checkout HEAD~1 Filename.txt(~1 means it is the version before the latest version.Similarly for ~2 and ~3)
+
+15.How to remove a change to file before it is commited
+git reset Filename.txt
+
+16.How to remove a change to file after it is commited
+There are 3 ways:
+1.Soft-git reset HEAD~1 --soft
+(It means that it does not allow the most recent change to the file be commited but it does not change the information in the staging area neither in the file itself)
+2.Mixed-git reset HEAD~1 --mixed
+(It means that that it does not allow the most recent change to the file be commited and neither allow the change to occur in the staging area but it does not change the information in the file itself)
+3.Hard-git reset HEAD~1 --hard
+(It means that that it does not allow the most recent change to the file be commited,neither allow the change to occur in the staging area and also it deletes the change from the file itself)
+
+17.How to create a Branch
+git branch BranchName
+
+18.How to View all the Branches
+git branch
+
+19.How to switch to another branch
+git checkout BranchName(Switches to the Branch Name)(Allows multiple versions of the project to be developed in parallel)
+
+20.How to merge different branches
+git merge Branchname(It will merge the BranchName to the master branch)(You must be in master branch to execute this command)
+
+21.How to add your file from your directory yo your GitHub directory 
+notepad FileName.txt
+git remote add origin URLofyourGitHubDirectory
+git remote -v
+git push origin master
+
+22.How to getout from a directory
+cd ..
+
+23.How to download a file from a GitHub repository to your pc
+(First go to that directory in your pc where you want the file to be present)
+git clone URLofthefilenameoftheGitHubrepository
